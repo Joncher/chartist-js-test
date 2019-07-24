@@ -10,6 +10,7 @@ export default class Bar extends Component {
     };
 
     let options = {
+      width: 600,
       high: 10,
       low: -10,
       axisX: {

@@ -18,15 +18,19 @@ export default class Pie extends Component {
           value: 70,
           name: "Series 3"
         }
-      ],
-      donut: true
+      ]
+    };
+    let options = {
+      width: "400px",
+      height: "400px",
+      donut: false
     };
 
     let type = "Pie";
 
     return (
       <div>
-        <ChartistGraph data={data} type={type} />
+        <ChartistGraph data={data} options={options} type={type} />
       </div>
     );
   }
